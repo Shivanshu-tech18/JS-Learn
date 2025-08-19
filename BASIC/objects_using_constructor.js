@@ -20,3 +20,13 @@ const regularuser={
 }
 // console.log(regularuser.fullname.userfullname.lastname)
 
+const course={
+    coursename: "java Script",
+    price:"999",
+    courseInstructor:"hitesh"
+}
+const {courseInstructor :instructor} =course;//De structuring of any objects
+
+// console.log(courseInstructor)
+console.log(instructor)
+
