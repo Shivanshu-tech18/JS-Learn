@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #211212; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(LangName){
+        const li=document.createElement('li');
+        li.innerHTML=`${LangName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("typescript");
+    function addoptiLanguage(langName)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptiLanguage('R programming')
+
+/// Editing
+    const secondLang=document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML="Ruby"
+    const newlang=document.createElement('li')
+    newlang.textContent="ruby"
+    secondLang.replaceWith(newlang)
+
+    //edit
+    const firstlang=document.querySelector("li:first-child");
+    firstlang.outerHTML='<li>Pearl</li>'
+    //remove
+    const lastlang=document.querySelector('li:last-child')
+    lastlang.remove()
+</script>
+</html>
